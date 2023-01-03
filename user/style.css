@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    
+  }
+
+.board {
+    width: 45%;
+    margin: 20px;
+   /* border-top: 5px solid #89705c; 
+    border-left: 5px solid #89705c; 
+    border-right: 5px solid #89705c; 
+    border-bottom: 5px solid #89705c; */
+    float: left;
+    box-shadow: 0 8px 12px 0 rgba(106, 56, 56, 0.2), 0 10px 40px 0 rgba(235, 165, 165, 0.19);
+}
+
+.info {
+    float: left;
+    margin: 20px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    font-size: 2em;
+    
+    
+}
+@media screen and (max-width:800px){
+    .board,.info{
+        width: 100%;
+    }
+}
+
+.move-history {
+    max-height: 350px;
+    overflow-y: scroll;
+}
+body {
+    min-height: 100vh;
+    background: #6a5240;  
+    background: -webkit-linear-gradient(to right, #6a5240, #6a5240); 
+    background: linear-gradient(to right, #6a5240, #6a5240); 
+  }
